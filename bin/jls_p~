@@ -1,0 +1,1 @@
+java -Xprof -Xmx256m -jar /home/kurmasz/public/CS451/JLS/JLS.jar $*

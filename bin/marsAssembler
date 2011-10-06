@@ -1,0 +1,7 @@
+# This script launches a java application that runs the assembler in
+#  the MARS simulator and writes the result to the standard output
+
+
+dir=`dirname $0`
+#echo "Dirname is " $dir
+java -cp $dir/jlsCircuitTester.jar:$dir/Mars.jar -ea edu.gvsu.cis.kurmasz.jls.MARSAssembler $*

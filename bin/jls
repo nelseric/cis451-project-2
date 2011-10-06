@@ -1,0 +1,14 @@
+ 
+# This script launches JLS, provided JLS.jar is in the same directory
+# as this file.
+
+# $0 contains the "name" of this script (the command typed at the
+# command line to launch it).  The dirname utility takes off the name
+# of the file and leaves the name of the directory containing the
+# script.  That directory name is then used to tell java where to find
+# JLS.
+
+
+dir=`dirname $0`
+echo "Dirname is " $dir
+java -Xmx256m -jar $dir/JLS.jar $*
