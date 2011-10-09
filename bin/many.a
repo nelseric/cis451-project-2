@@ -1,0 +1,16 @@
+.data
+aa: 50
+bb: 60
+cc: 70
+dd: 1
+.text
+lw $t0, aa
+lw $t1, bb
+sub $t0, $t0, $t1
+lw $t3, cc
+slt $t0, $t3, $t0
+slti $t0, $2, 20
+lw $t0, aa
+lw $t0, bb
+andi $t1, 66
+nor $t0, $t0, $t1

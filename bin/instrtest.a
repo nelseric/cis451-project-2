@@ -1,6 +1,6 @@
 .data
 initial: 0
-max: 10
+max: 10	
 result: 0
 .text
 lw $s0, initial
