@@ -1,0 +1,19 @@
+.data
+initial: 0
+max: 10
+result: 0
+.text
+lw $s0, initial
+lw $s1, max
+addi $s2, $0, 0
+
+loop:
+add $s2, $s2, $s0
+addi $s0, $s0, 1
+
+beq  $s0, $s1, finished
+j loop
+
+finished:
+la $t0, result
+sw $s2, ($t0)
